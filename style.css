@@ -109,7 +109,8 @@ nav select{
     background-color: rgb(229, 9, 20);
     color: white;
     border-radius: 7px;
-
+    margin-left: 10px;
+    padding: 9px 27px;
 
 }
 
@@ -121,4 +122,50 @@ nav select{
     border-radius: 7px;
     border: none;
     font-weight:bold;
+}
+.first{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0 40px 0;
+}
+
+section img{
+    width: 40vw;
+    position: relative;
+    /* overflow: hidden; */
+    z-index: 10;
+}
+
+.sec_img{
+    position: relative;
+    padding-bottom: 50px;
+    /* overflow: hidden; */
+}
+.sec_img video{
+    position: absolute;
+    top: 97px;
+    width: 30vw;
+    right: 0;
+    left: 84px;
+}
+.first > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.first > div :nth-child(1){
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+    padding-right: 11px;
+    font-family: ui-monospace;
+
 }
