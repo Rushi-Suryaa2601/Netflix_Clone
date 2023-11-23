@@ -141,6 +141,15 @@ nav select{
     margin: auto;
     padding: 40px 0 40px 0;
 }
+.third{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0 40px 0;
+}
 
 section img{
     width: 40vw;
@@ -153,6 +162,10 @@ section img{
     position: relative;
     padding-bottom: 50px;
     /* overflow: hidden; */
+}
+
+.sec_img2 img{
+    position: relative;
 }
 .sec_img video{
     position: absolute;
@@ -187,23 +200,49 @@ section img{
 
 }
 
+
+
 .sec_img .box2{
     width: 20vw;
     display: flex;
     flex-direction: row;
     /* background-color: red; */
     align-items: center;
-    gap: 55px;
+    gap: 22px;
     border: 2px solid white;
     border-radius: 20px;
+    position: relative;
+    top: -170px;
+    z-index: 10;
+    left: 140px;
+    background-color: black;
+    border: 2px solid rgba(128,128,128,0.7);
 
+}
+.box2 .strange :nth-child(1){
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.box2 .strange :nth-child(2){
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #0071eb;
 }
 
 .box2 img{
-    width: 90px;
-    height: 100px;
+    width: 60px;
+    height: 70px;
+    padding: 10px 0 3px 10px;
+    
 
 }
+.box2 .gif{
+    
+}
+
 .faq{
    padding: 40px;
 }
@@ -228,7 +267,8 @@ section img{
 }
 
 .faq-box:hover{
-    background-color:rgb(92, 89, 89);
+    background-color:#454545;
+    transition: 1s all ease-in-out;
 }
 .faq .hero{
     padding: 30px;
@@ -248,4 +288,28 @@ section img{
     
         border: 0.2px solid rgba(246, 238, 238, 0.7);
     
+}
+footer{
+    color:rgba(255,255,255,0.7) ;
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px 0 50px 80px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer .footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-item a{
+    color: rgba(255,255,255,0.7);
+}
+
+footer .question{
+    padding:20px 0;
 }
